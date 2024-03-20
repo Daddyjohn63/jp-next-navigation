@@ -1,4 +1,10 @@
+import NavigationRoutes from './navbar-routes';
+
 function MobileSidebar() {
-  return <div>{/* <h1 className="text-black">mobile-sidebar</h1> */}</div>;
+  return (
+    <div className="block md:hidden">
+      <NavigationRoutes />
+    </div>
+  );
 }
 export default MobileSidebar;

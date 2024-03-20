@@ -1,6 +1,7 @@
 import { Heart } from 'lucide-react';
 import NavigationRoutes from './navbar-routes';
 import Link from 'next/link';
+import MobileSidebar from './mobile-sidebar';
 
 const Navbar = () => {
   return (
@@ -10,6 +11,7 @@ const Navbar = () => {
           <Heart size={40} />
         </Link>
       </div>
+      <MobileSidebar />
       <div className="hidden md:flex flex-1 justify-end">
         <NavigationRoutes />
       </div>
