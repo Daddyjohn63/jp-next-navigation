@@ -49,11 +49,15 @@ const routes = [
   }
 ];
 
-function NavigationRoutes() {
+function NavigationRoutes({ mobileView = false }) {
   const pathname = usePathname();
 
+  const containerClasses = cn({
+    'flex justify-end': !mobileView,
+    'flex-col': mobileView
+  });
   return (
-    <div className="flex flex-1 justify-end">
+    <div className={containerClasses}>
       {routes.map(route => (
         <NavigationItems key={route.href} route={route} pathname={pathname} />
       ))}
