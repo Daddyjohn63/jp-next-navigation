@@ -11,6 +11,7 @@ const Navbar = () => {
           <Heart size={40} />
         </Link>
       </div>
+
       <MobileSidebar />
       <div className="hidden md:flex flex-1 justify-end">
         <NavigationRoutes />
